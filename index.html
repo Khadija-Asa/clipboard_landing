@@ -8,6 +8,7 @@
   <!-- css -->
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- title -->
   <title>Clipboard</title>
@@ -17,23 +18,23 @@
   <!-- BANNER -->
   <section class="hero_banner">
 
-    <div class="banner_logo">
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900" class="banner_logo">
       <img src="./assets/logo.svg" alt="Logo Clipboard">
     </div>
 <br>
 <br>
     <div class="banner_title">
-      <h1>
+      <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
         Une histoire de tout ce que vous copiez
       </h1>
-      <p>
+      <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
         Clipboard vous permet de suivre et d’organiser tout ce que vous copiez.
         Accédez instantanément à votre presse-papiers sur tous vos appareils.
       </p>
     </div>
 <br>
 <br>
-    <div class="banner_button">
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900" class="banner_button">
       <a class="button_ios">
         Télécharger pour iOS
       </a>
@@ -46,10 +47,10 @@
 
   <!-- DESCRIPTION -->
   <section class="banner_description">
-    <h2>
+    <h2 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
       Gardez une trace de vos extraits
     </h2>
-    <p>
+    <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
       Clipboard enregistre instantanément tout ce que vous copiez dans le cloud, 
       ce qui signifie que vous pouvez accéder à vos extraits immédiatement 
       depuis tous vos appareils.
@@ -63,26 +64,26 @@
 
     <ul class="listing_list">
       <li>
-        <h4>
+        <h4 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
           Recherche Rapide
         </h4>
-        <p>
+        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="450">
           Recherchez facilement vos extraits par contenu, catégorie, adresse web, application et bien plus encore.
         </p>
       </li>
       <li>
-        <h4>
+        <h4 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
           Historique Complet
         </h4>
-        <p>
+        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="550">
           Enregistre et synchronise instantanément vos extraits sur tous vos appareils.
         </p>
       </li>
       <li>
-        <h4>
+        <h4 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
           Sync iCloud
         </h4>
-        <p>
+        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="650">
           Retrouvez n’importe quel extrait depuis le tout premier moment où vous avez commencé à utiliser l’application.
         </p>
       </li>
@@ -112,7 +113,7 @@
     </p>
 
     <ul class="infos2_list">
-      <li>
+      <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
         <img src="./assets/icon-blacklist.svg" alt="Icône blacklist">
         <h4>
           Créer des listes noires
@@ -122,7 +123,7 @@
           jamais dans votre presse-papiers en excluant certaines sources.
         </p>
       </li>
-      <li>
+      <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
         <img src="./assets/icon-text.svg" alt="Icône text">
         <h4>
           Extraits en texte brut
@@ -131,7 +132,7 @@
           Supprimez la mise en forme indésirable du texte copié pour un rendu uniforme.
         </p>
       </li>
-      <li>
+      <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
         <img src="./assets/icon-preview.svg" alt="Icône vue">
         <h4>
           Avant-première exclusive
@@ -166,10 +167,10 @@
 <br>
 <br>
     <div class="banner_button">
-      <a class="button_ios">
+      <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400" class="button_ios">
         Télécharger pour iOS
       </a>
-      <a class="button_mac">
+      <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="button_mac">
         Télécharger pour Mac
       </a>
     </div>
@@ -216,5 +217,9 @@
 </footer>
 
 
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

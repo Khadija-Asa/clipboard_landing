@@ -8,6 +8,26 @@
   padding: 6rem 1.5rem;
 }
 
+.banner_description {
+  background-color: aliceblue;
+}
+
+@media (max-width: 1023px) {
+  .hero_banner {
+    background-image: url(./../assets/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero_banner {
+    background-image: url(./../assets/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .hero_banner h1,
 .banner_description h2,
 .listing_list h4,
@@ -122,6 +142,9 @@
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+  background-color: aliceblue;
+  padding: 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* BOTTOM BUTTON */
@@ -189,6 +212,7 @@
   margin-top: 10rem;
   gap: 20px;
   text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .footer_logo img {
