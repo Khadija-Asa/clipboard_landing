@@ -1,9 +1,3 @@
-@media (max-width: 767px) {
-  body {
-    text-align: center;
-  }
-}
-
 /* BANNER */
 .hero_banner,
 .banner_description {
@@ -18,7 +12,8 @@
 .banner_description h2,
 .listing_list h4,
 .infos h3,
-.infos2 h3 {
+.infos2 h3,
+.bottom_text h3 {
   color: var(--Dark-Gray);
   margin-bottom: 1rem;
   text-align: center;
@@ -26,7 +21,8 @@
 
 .hero_banner p,
 .banner_description p,
-.listing_list p {
+.listing_list p,
+.bottom_text p {
   color: var(--Light-Gray);
   max-width: 600px;
   text-align: center;
@@ -89,7 +85,8 @@
 }
 
 .infos p,
-.infos2 p {
+.infos2 p,
+.bottom_text p {
   color: var(--Light-Gray);
 }
 
@@ -99,7 +96,8 @@
 }
 
 /* INFOS2 LIST */
-.infos2_list {
+.infos2_list,
+.bottom_text {
   margin-top: 8rem;
   text-align: -webkit-center;
 }
@@ -124,6 +122,14 @@
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+}
+
+/* BOTTOM BUTTON */
+.bottom_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12rem;
 }
 
 /* MEDIA QUERIES */
@@ -172,3 +178,98 @@
     gap: 8rem;
   }
 }
+
+/* FOOTER */
+.footer {
+  padding: 4rem 1.5rem;
+  display: flex;
+  background-color: rgb(241, 241, 241);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer_logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+}
+
+.links_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links_column a {
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer_icons a img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s;
+}
+
+.footer_icons a:hover img {
+  filter: brightness(0.7) invert(1);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .footer_links {
+    flex-direction: row;
+    gap: clamp(1.5625rem, -3.6458rem + 10.8507vw, 9.375rem);
+    max-width: unset;
+    width: auto;
+    align-items: flex-start;
+  }
+  .desktop_only {
+    display: flex;
+  }
+  .links_column:first-child {
+    display: none;
+  }
+  .links_column.desktop-only {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_icons {
+    order: 99;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+  padding: 4rem 15rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop_only {
+    display: none;
+  }
+}
+
