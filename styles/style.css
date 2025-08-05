@@ -118,16 +118,28 @@
   margin-bottom: 1rem;
 }
 
-
-
-
-
-
+/* LOGO CORP */
+.logo_list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
   .banner_button {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
   }
 }
 
@@ -151,5 +163,12 @@
     justify-content: center;
     gap: 5rem;
     align-items: baseline;
+  }
+  .logo_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
   }
 }
