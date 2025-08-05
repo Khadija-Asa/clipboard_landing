@@ -1,5 +1,12 @@
+@media (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+}
+
 /* BANNER */
-.hero_banner {
+.hero_banner,
+.banner_description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,12 +14,16 @@
   padding: 6rem 1.5rem;
 }
 
-.hero_banner h1 {
+.hero_banner h1,
+.banner_description h2,
+.listing_list h3 {
   color: var(--Dark-Gray);
   margin-bottom: 1rem;
 }
 
-.hero_banner p {
+.hero_banner p,
+.banner_description p,
+.listing_list p {
   color: var(--Light-Gray);
   max-width: 600px;
 }
@@ -46,8 +57,44 @@
  transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
+/* LIST */
+.listing {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.listing img {
+  width: 350px;
+}
+
+.listing_list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 768px) {
   .banner_button {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .listing {
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .listing img {
+    width: 50rem;
+  }
+  .listing_list {
+    text-align: left;
+    max-width: 400px;
   }
 }
